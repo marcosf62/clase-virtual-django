@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Adios!!</p>
-</body>
-</html>
+{% extends 'saludo/base.html' %}
+{% block body %}
+    <p>Adios {{ nombre }}!!!!!</p>
+    {% if esMayor %}
+            <hr>
+            <h1>Sos mayor de edad</h1>
+            <hr>
+        {% else %}
+            <hr>
+            <h1>Sos menor de edad</h1>
+            <hr>
+    {% endif %}
+
+{% endblock %}

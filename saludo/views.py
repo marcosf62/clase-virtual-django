@@ -13,7 +13,7 @@ def saludo(request):
     return render(request,'saludo/index.html', contexto)
 
 def despedir(request):
-    return render(request,'saludo/despedir.html')
+    return render(request,'saludo/despedir.html',contexto)
 
 def inicio(request):
     return HttpResponse("<h1>estoy en root</h1>")

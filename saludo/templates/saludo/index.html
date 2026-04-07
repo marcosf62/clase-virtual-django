@@ -1,15 +1,6 @@
-{% load static %}
+{% extends 'saludo/base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'saludo/styles.css' %}">
-    <title> Saludo-Index</title>
-</head>
-<body>
-    <div>
+{% block body%}
         <p>saludos {{ nombre }}!!!</p>
         {% if esMayor %}
         <hr>
@@ -30,6 +21,4 @@
         </ul>
 
     </div>
-    
-</body>
-</html>
+{% endblock %}
